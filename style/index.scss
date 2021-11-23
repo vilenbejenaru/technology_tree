@@ -1,0 +1,72 @@
+@import "null";
+
+.main__title, .main__tree {
+  text-align: center;
+}
+
+.main-tree__link {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 160px;
+  height: 90px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  transition: .3s;
+}
+
+.main-tree__img {
+  width: 50px;
+}
+
+.main__elements {
+  display: flex;
+  justify-content: center;
+}
+
+.main-line-html {
+  position: absolute;
+  width: 120px;
+  height: 6px;
+  background: red;
+  left: 101px;
+  top: -24px;
+  transform: rotate(-19deg);
+}
+
+.main-line-css {
+  position: absolute;
+  width: 24px;
+  height: 6px;
+  background: blue;
+  left: 62px;
+  top: -20px;
+  transform: rotate(-90deg);
+}
+
+.main__info {
+  width: 500px;
+  margin: 0 auto;
+  padding: 45px 0;
+  text-align: center;
+}
+
+.main-tree__link:hover {
+  background: antiquewhite;
+}
+
+.main-line-js {
+  position: absolute;
+  width: 114px;
+  height: 6px;
+  background: orange;
+  left: -63px;
+  top: -20px;
+  transform: rotate(19deg);
+}
+
+
+
