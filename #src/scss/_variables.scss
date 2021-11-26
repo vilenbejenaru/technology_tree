@@ -1,0 +1,110 @@
+$primary-color: #181818;
+$secondary-color: #8f8f8f;
+$red: #ce1d1d;
+$blue: #1d20ca;
+$yellow: #d6d613;
+$white: #fff;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100%;
+	background: #e8e8e8;
+	color: $primary-color;
+}
+
+body.open {
+	overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+.header__link {
+	font-family: 'Space Mono', monospace;
+	font-weight: 500;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+	color: $primary-color;
+	font-family: 'Roboto Mono', monospace;
+	border: none;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: $primary-color;
+	font-family: 'Roboto Mono', monospace;
+}
+
+button {
+	font-family: 'Roboto Mono', monospace;
+	padding: 5px 15px;
+	color: teal;
+	font-size: 24px;
+	background: transparent;
+	border: 1px solid teal;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background: teal;
+		color: #fff;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+select {
+	outline: none;
+	border: none;
+	appearance: none;
+	background: inherit;
+	cursor: pointer;
+	font-size: 12px;
+	align-self: flex-start;
+	color: inherit;
+	margin-left: 20px;
+}
+
+select:hover {
+	color: $secondary-color;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 1400px;
+	margin: 50px auto;
+	padding: 0 20px;
+}
