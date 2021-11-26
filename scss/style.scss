@@ -1,4 +1,5 @@
 @import 'variables'; // обнуление стилей
+@import 'js-tree'; // js tree
 
 // стили index.html
 .container {
@@ -6,7 +7,14 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	max-width: 1400px;
 	margin: 50px auto;
+	padding: 0 20px;
+}
+
+.main__text {
+	text-align: center;
+	width: 80%;
 }
 
 .tooltip {
@@ -26,12 +34,18 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 40px;
+	text-align: center;
 }
 
-.images > div {
-	text-align: center;
-	width: 33.3333%;
+.union__images {
+	display: flex;
+	justify-content: space-between;
+	width: 66.666%;
+}
+
+.ununion__image {
 	display: grid;
+	text-align: center;
 }
 
 .image__html {
@@ -39,34 +53,123 @@
 	justify-content: center;
 }
 
+.icon__text {
+	text-align: center;
+}
+
 .html__icon,
 .css__icon,
 .js__icon {
 	font-size: 30px;
 	cursor: pointer;
-	color: #df4242;
+	color: $red;
 	transition: all 0.4s ease;
 }
 
 .css__icon {
-	color: #3739e2;
-}
-
-.css__icon::before {
+	color: $blue;
 }
 
 .js__icon {
-	color: #d6d613;
+	color: $yellow;
 }
 
 .html__icon:hover,
 .css__icon:hover,
 .js__icon:hover {
-	color: #ccc;
+	color: $secondary-color;
 }
 
 // стили html.html
 .html__img {
 	display: grid;
 	margin-top: 20px;
+}
+
+.html__css {
+	justify-content: center;
+	margin: 0 10px;
+	text-align: center;
+}
+
+.html__tree {
+	display: grid;
+	padding: 0 10px;
+}
+
+.tree-diagram ul {
+	display: flex;
+	position: relative;
+
+	/* Reset */
+	list-style-type: none;
+	margin: 0;
+	padding: 1rem 0.5rem 0rem 0.5rem;
+}
+
+.tree-diagram ul ul::before {
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+	content: '';
+
+	/* Position */
+	position: absolute;
+	top: 0;
+	right: 50%;
+
+	/* Size */
+	height: 1rem;
+	width: 50%;
+}
+
+.tree-diagram li {
+	padding: 1rem 0.5rem 0rem 0.5rem;
+	position: relative;
+
+	/* Center the content */
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.tree-diagram li::before {
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 50%;
+	height: 1rem;
+	width: 50%;
+}
+
+.tree-diagram li::after {
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+}
+
+.tree-diagram li:first-child::before,
+.tree-diagram li:last-child::after {
+	border-top: none;
+}
+
+/* Add a root item if you want */
+li.tree-diagram__root::before {
+	border-right: none;
+}
+
+.border {
+	border: 2px solid $secondary-color;
+	border-radius: 30px;
+	padding: 2px 10px;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.border:hover {
+	background-color: $red;
+	color: $white;
 }

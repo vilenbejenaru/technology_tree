@@ -4,17 +4,216 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Space+Mono&display=swap"
+			rel="stylesheet"
+			type="text/css"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<title>Html tree</title>
+		<title>Html & CSS tree</title>
 	</head>
 	<body>
 		<div class="container">
-			<h1>HTML tree</h1>
-			<div class="html__img">
-				<span>HTML</span>
+			<h1>Дерево HTML и СSS</h1>
+			<!-- <div class="html__img">
+				<span class="icon__text">HTML</span>
 				<a class="html__icon" href="index.html"
 					><i data-tooltip="Вернуться назад" class="fab fa-html5 fa-2x"></i
 				></a>
+			</div> -->
+			<div class="union__images html__css">
+				<div class="html__tree">
+					<span class="icon__text">HTML</span>
+					<a class="html__icon" href="html.html" target="_blank">
+						<i class="fab fa-html5 fa-2x"></i>
+					</a>
+				</div>
+				<div class="html__tree">
+					<span>CSS</span>
+					<a class="css__icon" href="#"
+						><i class="fab fa-css3-alt fa-2x"></i
+					></a>
+				</div>
+			</div>
+			<div class="tree-diagram">
+				<ul>
+					<li>
+						<!-- Content -->
+						<p>Подготовка</p>
+						<!-- Sub items -->
+						<ul>
+							<li>
+								<!-- Content -->
+								<p
+									class="border"
+									data-tooltip="Главный инструмент разработчика"
+								>
+									Выбор редактора кода (IDE)
+								</p>
+								<!-- Sub items -->
+								<ul>
+									<li>
+										<a
+											class="border"
+											href="https://code.visualstudio.com"
+											target="_blank"
+											data-tooltip="Универсальный редактор кода от Microsoft"
+										>
+											Visual Studio Code
+										</a>
+									</li>
+									<li>
+										<a
+											class="border"
+											href="https://atom.io"
+											target="_blank"
+											data-tooltip="Простой и удобный редактор от GitHub Inc."
+										>
+											Atom
+										</a>
+									</li>
+									<li>
+										<a
+											class="border"
+											href="https://www.sublimetext.com"
+											target="_blank"
+											data-tooltip="Лёгкий, но довольно мощный редактор"
+										>
+											Sublime Text 3
+										</a>
+									</li>
+									<li>
+										<a
+											class="border"
+											href="https://www.jetbrains.com/ru-ru/webstorm"
+											target="_blank"
+											data-tooltip="Самый функциональный, но платный"
+										>
+											WebStorm
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="long__line">
+								<a
+									class="border"
+									href="https://learn.javascript.ru/devtools#itogo"
+									target="_blank"
+									data-tooltip="Узнай что это"
+								>
+									Консоль разработчика
+								</a>
+							</li>
+							<!-- ... -->
+						</ul>
+					</li>
+
+					<!-- Repeat other items -->
+					<!-- ... -->
+				</ul>
+				<ul>
+					<li>
+						<!-- Content -->
+						<p
+							data-tooltip="HTML - язык разметки, определяющий содержание и структуру веб-контента.    CSS - код, который вы используете для стилизации вашей веб-страницы"
+						>
+							Html-теги
+							<br />
+							Основы CSS
+						</p>
+						<!-- Sub items -->
+						<ul>
+							<li>
+								<!-- Content -->
+								<a
+									href="https://html5book.ru/html-tags"
+									target="_blank"
+									class="border"
+									data-tooltip="Основа языка HTML"
+								>
+									Учим основные HTML-теги
+								</a>
+								<!-- Sub items -->
+								<ul>
+									<li>
+										<a
+											class="border"
+											href="https://code.visualstudio.com"
+											data-tooltip="Простые элементы управления HTML, которые применяются для сбора информации от посетителей веб-сайта"
+										>
+											HTML-формы
+										</a>
+									</li>
+									<li>
+										<a
+											class="border"
+											href="https://code.visualstudio.com"
+											data-tooltip=""
+										>
+											Веб-графика
+										</a>
+									</li>
+									<li>
+										<a
+											class="border"
+											href="https://atom.io"
+											target="_blank"
+											data-tooltip=""
+										>
+											Адаптивная вёрстка
+										</a>
+									</li>
+									<li>
+										<a
+											class="border"
+											href="https://www.sublimetext.com"
+											target="_blank"
+											data-tooltip=""
+										>
+											Методология БЭМ
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="long__line">
+								<a
+									class="border"
+									href="https://learn.javascript.ru/devtools#itogo"
+									target="_blank"
+									data-tooltip="Узнай что это"
+								>
+									Учим основы CSS
+								</a>
+								<ul>
+									<li>
+										<a
+											class="border"
+											href="https://code.visualstudio.com"
+											target="_blank"
+											data-tooltip=""
+										>
+											FLEX
+										</a>
+									</li>
+									<li>
+										<a
+											class="border"
+											href="https://atom.io"
+											target="_blank"
+											data-tooltip=""
+										>
+											GRID
+										</a>
+									</li>
+								</ul>
+							</li>
+							<!-- ... -->
+						</ul>
+					</li>
+
+					<!-- Repeat other items -->
+					<!-- ... -->
+				</ul>
 			</div>
 		</div>
 		<script
