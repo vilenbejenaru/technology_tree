@@ -22,17 +22,25 @@ body.open {
   overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, strong, .header__link {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+.header__link {
   font-family: 'Space Mono', monospace;
   font-weight: 500;
-  background: -webkit-linear-gradient(left, var(--mainText), var(--secondaryText));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
-p, li, span, label, input, textarea {
-  color: var(--mainText);
+p,
+li,
+span,
+label,
+input,
+textarea {
+  color: #181818;
   font-family: 'Roboto Mono', monospace;
   border: none;
   outline: none;
@@ -40,6 +48,8 @@ p, li, span, label, input, textarea {
 
 a {
   text-decoration: none;
+  color: #181818;
+  font-family: 'Roboto Mono', monospace;
 }
 
 ul {
@@ -62,7 +72,7 @@ select {
 }
 
 select:hover {
-  color: var(--secondaryText);
+  color: #8f8f8f;
 }
 
 table {

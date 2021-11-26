@@ -22,17 +22,25 @@ body.open {
   overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, strong, .header__link {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+.header__link {
   font-family: 'Space Mono', monospace;
   font-weight: 500;
-  background: -webkit-linear-gradient(left, var(--mainText), var(--secondaryText));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
-p, li, span, label, input, textarea {
-  color: var(--mainText);
+p,
+li,
+span,
+label,
+input,
+textarea {
+  color: #181818;
   font-family: 'Roboto Mono', monospace;
   border: none;
   outline: none;
@@ -40,6 +48,8 @@ p, li, span, label, input, textarea {
 
 a {
   text-decoration: none;
+  color: #181818;
+  font-family: 'Roboto Mono', monospace;
 }
 
 ul {
@@ -62,11 +72,18 @@ select {
 }
 
 select:hover {
-  color: var(--secondaryText);
+  color: #8f8f8f;
 }
 
 table {
   border-collapse: collapse;
+}
+
+#visualisation {
+  width: 90%;
+  background: url(img/js-icon.jpg) no-repeat center;
+  background-size: cover;
+  margin: 50px 0;
 }
 
 .container {
@@ -83,7 +100,14 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1400px;
   margin: 50px auto;
+  padding: 0 20px;
+}
+
+.main__text {
+  text-align: center;
+  width: 80%;
 }
 
 .tooltip {
@@ -108,13 +132,23 @@ table {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 40px;
+  text-align: center;
 }
 
-.images > div {
-  text-align: center;
-  width: 33.3333%;
+.union__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 66.666%;
+}
+
+.ununion__image {
   display: -ms-grid;
   display: grid;
+  text-align: center;
 }
 
 .image__html {
@@ -124,6 +158,10 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.icon__text {
+  text-align: center;
 }
 
 .html__icon,
@@ -147,11 +185,108 @@ table {
 .html__icon:hover,
 .css__icon:hover,
 .js__icon:hover {
-  color: #ccc;
+  color: #8f8f8f;
 }
 
 .html__img {
   display: -ms-grid;
   display: grid;
   margin-top: 20px;
+}
+
+.html__css {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.html__tree {
+  display: -ms-grid;
+  display: grid;
+  padding: 0 10px;
+}
+
+.tree-diagram ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  /* Reset */
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+}
+
+.tree-diagram ul ul::before {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  content: '';
+  /* Position */
+  position: absolute;
+  top: 0;
+  right: 50%;
+  /* Size */
+  height: 1rem;
+  width: 50%;
+}
+
+.tree-diagram li {
+  padding: 1rem 0.5rem 0rem 0.5rem;
+  position: relative;
+  /* Center the content */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tree-diagram li::before {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  height: 1rem;
+  width: 50%;
+}
+
+.tree-diagram li::after {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+
+.tree-diagram li:first-child::before,
+.tree-diagram li:last-child::after {
+  border-top: none;
+}
+
+/* Add a root item if you want */
+li.tree-diagram__root::before {
+  border-right: none;
+}
+
+.border {
+  border: 2px solid #8f8f8f;
+  border-radius: 30px;
+  padding: 2px 10px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.border:hover {
+  background-color: #df4242;
+  color: #fff;
 }
