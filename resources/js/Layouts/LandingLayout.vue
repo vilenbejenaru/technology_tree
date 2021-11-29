@@ -1,7 +1,8 @@
 <template>
   <div class="container">
         <div class="row justify-content-center">
-
+<!-- page content -->
+      <slot/>
 <!-- page content -->
 
         </div>
@@ -10,10 +11,17 @@
 
 <script>
     export default {
+        name: 'LandingLayout',
 
     }
 </script>
 
 <style lang="scss" scoped>
-
+.container {
+width: 60%;
+margin: 5vh auto;
+height: 40vh;
+color: azure;
+background-color: blue;
+}
 </style>
