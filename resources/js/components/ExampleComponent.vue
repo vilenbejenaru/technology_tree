@@ -8,6 +8,8 @@
                     <div class="card-body">
                         I'm an example component.
                     </div>
+                    <a href="/register">Регистрация</a>
+                    <a href="/login">Логин</a>
                 </div>
             </div>
         </div>

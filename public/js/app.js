@@ -2081,6 +2081,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -37586,6 +37588,10 @@ var staticRenderFns = [
                 "\n                    I'm an example component.\n                "
               ),
             ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "/register" } }, [_vm._v("Регистрация")]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "/login" } }, [_vm._v("Логин")]),
           ]),
         ]),
       ]),
