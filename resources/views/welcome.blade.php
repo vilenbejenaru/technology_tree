@@ -12,7 +12,6 @@
     <body>
         <div id="app">
              <technology-tree-app>
-                 {{-- <router-view/> --}}
              </technology-tree-app>
         </div>
         <script src="{{ mix('/js/app.js') }}"></script>

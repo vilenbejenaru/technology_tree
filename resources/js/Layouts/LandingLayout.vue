@@ -21,7 +21,6 @@
 width: 60%;
 margin: 5vh auto;
 height: 40vh;
-color: azure;
-background-color: blue;
+// background-color: blue;
 }
 </style>

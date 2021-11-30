@@ -1,15 +1,16 @@
 <template>
     <landing-layout>
-        <h2>Landing Page Layout</h2>
+        <wwww />
     </landing-layout>
 </template>
 
 <script>
+import Wwww from '../components/wwww.vue';
 import LandingLayout from "../Layouts/LandingLayout.vue";
 
 export default {
     name: 'LandingPage',
-    components: { LandingLayout },
+    components: { LandingLayout, Wwww,   },
 };
 </script>
 

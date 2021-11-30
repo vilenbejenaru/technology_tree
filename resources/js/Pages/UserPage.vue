@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import userLayout from "../Layouts/userLayout.vue";
+import userLayout from "../Layouts/UserLayout.vue";
 
 export default {
     name: 'LandingPage',
