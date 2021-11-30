@@ -1,19 +1,13 @@
 <template>
-  <div class="container">
-        <div class="row justify-content-center">
-
-<!-- page content -->
-
-        </div>
+    <div class="container">
+        <!-- page content -->
+        <slot/>
+        <!-- page content -->
     </div>
 </template>
 
 <script>
-    export default {
-
-    }
+export default {};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style ></style>

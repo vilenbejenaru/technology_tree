@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="app">
-             <example-component></example-component>
+             <technology-tree-app></technology-tree-app>
         </div>
         <script src="{{ mix('/js/app.js') }}"></script>
     </body>
