@@ -1,11 +1,16 @@
 <template>
-   <section class="jumbotron jumbotron-fluid tt-hero">
-  <div class="container">
-    <h1 class="display-4">Дерево технологий</h1>
-    <p class="lead">Пройди обучение современным технологиям!</p>
-    <p class="lead">Найди свой путь, избегая чужих ошибок!</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Узнать подробнее</a>
-  </div>
+   <section  class="section section-header pb-7 mt-5 tt-hero">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8 text-center">
+                        <h1 class="display-2 mb-4">Дерево технологий</h1>
+                        <p class="lead mb-5">Пройди обучение современным технологиям!</p>
+                        <p class="lead mb-5">Найди свой путь, избегая чужих ошибок!!!</p>
+                        <a class="btn btn-primary" href="#"><span class="fas fa-book-reader mr-2"></span>Узнать подробнее</a></div>
+                        <img src="resources/assets/img/ttree/ttree_bg.jpg" alt="">
+                </div>
+            </div>
+
 </section>
 </template>
 
@@ -18,6 +23,6 @@
 <style >
 .tt-hero {
     background-image: url(/public/images/ttree_bg.jpg);
-    background-color: #f8f9fabb;
+    /* background-color: #f8f9fabb; */
 }
 </style>
