@@ -12,7 +12,7 @@
                         <!-- Profile Card -->
                         <div class="card bg-primary shadow-soft border-light text-center py-4 mb-5">
                             <div class="profile-image shadow-inset border border-light bg-primary rounded-circle p-3 mx-auto">
-                                <!-- <img src="../../assets/img/team/profile-picture-1.jpg" class="card-img-top shadow-soft p-2 border border-light rounded-circle" alt="Андрей"> -->
+                                <img src="../../assets/img/team/profile-picture-1.jpg" class="card-img-top shadow-soft p-2 border border-light rounded-circle" alt="Андрей">
                                 <!-- <img           src="../../assets/img/brand/dark.svg" class="card-img-top shadow-soft p-2 border border-light rounded-circle" alt="Андрей"> -->
                             </div>
                             <div class="card-body">
@@ -49,7 +49,7 @@
                         <div class="card bg-primary shadow-soft border-light text-center py-4 mb-5">
                             <div class="profile-image shadow-inset border border-light bg-primary rounded-circle p-3 mx-auto">
                                 <!-- <img src="../../assets/img/team/profile-picture-3.jpg" class="card-img-top shadow-soft p-2 border border-light rounded-circle" alt="Bonnie Avatar"> -->
-                                <!-- <img           src="../../assets/img/brand/dark.svg" class="card-img-top shadow-soft p-2 border border-light rounded-circle" alt="Сергей"> -->
+                                <img           src="../../assets/img/brand/dark.svg" class="card-img-top shadow-soft p-2 border border-light rounded-circle" alt="Сергей">
 
                             </div>
                             <div class="card-body">
@@ -85,7 +85,7 @@
                         <!-- Profile Card -->
                         <div class="card bg-primary shadow-soft border-light text-center py-4 mb-5">
                             <div class="profile-image shadow-inset border border-light bg-primary rounded-circle p-3 mx-auto">
-                                <!-- <img src="../../assets/img/team/profile-picture-2.jpg" class="card-img-top shadow-soft p-2 border border-light rounded-circle" alt="Вилен"> -->
+                                <img src="../../assets/img/team/profile-picture-2.jpg" class="card-img-top shadow-soft p-2 border border-light rounded-circle" alt="Вилен">
                                 <!-- <img           src="../../assets/img/brand/dark.svg" class="card-img-top shadow-soft p-2 border border-light rounded-circle" alt="Вилен"> -->
 
                             </div>

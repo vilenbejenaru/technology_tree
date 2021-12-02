@@ -22,16 +22,18 @@
                     "
                     href="../../index.html"
                 >
-                    <!-- <img
+                    <img
                         class="navbar-brand-dark"
-                        src="../../assets/img/brand/dark.svg"
+                        src="../../assets/img/ttree/ttree_logo.jpg"
                         alt="Logo light"
-                    /> -->
-                    <!-- <img
+                    />
+                    <img
                         class="navbar-brand-light"
-                        src="../../assets/img/brand/dark.svg"
+                                               src="/public/images/ttree_logo.jpg"
                         alt="Logo dark"
-                    /> -->
+                    />
+                    <!--public\images\ttree_logo.jpg
+                        resources\assets\img\ttree\ttree_logo.jpg -->
                 </a>
                 <div class="navbar-collapse collapse" id="navbar_global">
                     <div class="navbar-collapse-header">
@@ -48,10 +50,11 @@
                                         border border-light
                                     "
                                 >
-                                    <!-- <img
-                                        src="../../assets/img/brand/dark.svg"
+                                    <img
+                                                                src="public/images/ttree_logo.jpg"
+
                                         alt="Themesberg logo"
-                                    /> -->
+                                    />
                                 </a>
                             </div>
                             <div class="col-6 collapse-close">

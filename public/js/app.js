@@ -3014,6 +3014,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -7676,6 +7679,81 @@ module.exports = function (cssWithMappingToString) {
 
   return list;
 };
+
+/***/ }),
+
+/***/ "./resources/assets/img/brand/dark.svg":
+/*!*********************************************!*\
+  !*** ./resources/assets/img/brand/dark.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/dark.svg?262eaa42be31534e14cb1002d5df3fb9");
+
+/***/ }),
+
+/***/ "./resources/assets/img/team/profile-picture-1.jpg":
+/*!*********************************************************!*\
+  !*** ./resources/assets/img/team/profile-picture-1.jpg ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/profile-picture-1.jpg?39d2812a3b8e62f457fe8554c0eeb6a4");
+
+/***/ }),
+
+/***/ "./resources/assets/img/team/profile-picture-2.jpg":
+/*!*********************************************************!*\
+  !*** ./resources/assets/img/team/profile-picture-2.jpg ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/profile-picture-2.jpg?37bea05ae2ee05d642b21971b9e86e44");
+
+/***/ }),
+
+/***/ "./resources/assets/img/themesberg.svg":
+/*!*********************************************!*\
+  !*** ./resources/assets/img/themesberg.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/themesberg.svg?f3d7e25730222aa78f07567aab394245");
+
+/***/ }),
+
+/***/ "./resources/assets/img/ttree/ttree_logo.jpg":
+/*!***************************************************!*\
+  !*** ./resources/assets/img/ttree/ttree_logo.jpg ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/ttree_logo.jpg?0c6659b2ff0457c98577828ec43012dc");
 
 /***/ }),
 
@@ -40683,10 +40761,23 @@ var staticRenderFns = [
                   "card bg-primary shadow-soft border-light text-center py-4 mb-5",
               },
               [
-                _c("div", {
-                  staticClass:
-                    "profile-image shadow-inset border border-light bg-primary rounded-circle p-3 mx-auto",
-                }),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "profile-image shadow-inset border border-light bg-primary rounded-circle p-3 mx-auto",
+                  },
+                  [
+                    _c("img", {
+                      staticClass:
+                        "card-img-top shadow-soft p-2 border border-light rounded-circle",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../assets/img/team/profile-picture-1.jpg */ "./resources/assets/img/team/profile-picture-1.jpg"),
+                        alt: "Андрей",
+                      },
+                    }),
+                  ]
+                ),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c("h3", { staticClass: "h5 mb-2" }, [_vm._v("Андрей ")]),
@@ -40778,10 +40869,23 @@ var staticRenderFns = [
                   "card bg-primary shadow-soft border-light text-center py-4 mb-5",
               },
               [
-                _c("div", {
-                  staticClass:
-                    "profile-image shadow-inset border border-light bg-primary rounded-circle p-3 mx-auto",
-                }),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "profile-image shadow-inset border border-light bg-primary rounded-circle p-3 mx-auto",
+                  },
+                  [
+                    _c("img", {
+                      staticClass:
+                        "card-img-top shadow-soft p-2 border border-light rounded-circle",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../assets/img/brand/dark.svg */ "./resources/assets/img/brand/dark.svg"),
+                        alt: "Сергей",
+                      },
+                    }),
+                  ]
+                ),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c("h3", { staticClass: "h5 mb-2" }, [_vm._v("Сергей")]),
@@ -40873,10 +40977,23 @@ var staticRenderFns = [
                   "card bg-primary shadow-soft border-light text-center py-4 mb-5",
               },
               [
-                _c("div", {
-                  staticClass:
-                    "profile-image shadow-inset border border-light bg-primary rounded-circle p-3 mx-auto",
-                }),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "profile-image shadow-inset border border-light bg-primary rounded-circle p-3 mx-auto",
+                  },
+                  [
+                    _c("img", {
+                      staticClass:
+                        "card-img-top shadow-soft p-2 border border-light rounded-circle",
+                      attrs: {
+                        src: __webpack_require__(/*! ../../assets/img/team/profile-picture-2.jpg */ "./resources/assets/img/team/profile-picture-2.jpg"),
+                        alt: "Вилен",
+                      },
+                    }),
+                  ]
+                ),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c("h3", { staticClass: "h5 mb-2" }, [_vm._v("Вилен")]),
@@ -41324,10 +41441,23 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col" }, [
-              _c("a", {
-                staticClass: "d-flex justify-content-center",
-                attrs: { href: "https://themesberg.com", target: "_blank" },
-              }),
+              _c(
+                "a",
+                {
+                  staticClass: "d-flex justify-content-center",
+                  attrs: { href: "https://themesberg.com", target: "_blank" },
+                },
+                [
+                  _c("img", {
+                    staticClass: "mb-3",
+                    attrs: {
+                      src: __webpack_require__(/*! ../../assets/img/themesberg.svg */ "./resources/assets/img/themesberg.svg"),
+                      height: "25",
+                      alt: "Themesberg Logo",
+                    },
+                  }),
+                ]
+              ),
               _vm._v(" "),
               _c(
                 "div",
@@ -41398,11 +41528,28 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container position-relative" }, [
-      _c("a", {
-        staticClass:
-          "\n                    navbar-brand\n                    shadow-soft\n                    py-2\n                    px-3\n                    rounded\n                    border border-light\n                    mr-lg-4\n                ",
-        attrs: { href: "../../index.html" },
-      }),
+      _c(
+        "a",
+        {
+          staticClass:
+            "\n                    navbar-brand\n                    shadow-soft\n                    py-2\n                    px-3\n                    rounded\n                    border border-light\n                    mr-lg-4\n                ",
+          attrs: { href: "../../index.html" },
+        },
+        [
+          _c("img", {
+            staticClass: "navbar-brand-dark",
+            attrs: {
+              src: __webpack_require__(/*! ../../assets/img/ttree/ttree_logo.jpg */ "./resources/assets/img/ttree/ttree_logo.jpg"),
+              alt: "Logo light",
+            },
+          }),
+          _vm._v(" "),
+          _c("img", {
+            staticClass: "navbar-brand-light",
+            attrs: { src: "/public/images/ttree_logo.jpg", alt: "Logo dark" },
+          }),
+        ]
+      ),
       _vm._v(" "),
       _c(
         "div",
@@ -41414,11 +41561,22 @@ var staticRenderFns = [
           _c("div", { staticClass: "navbar-collapse-header" }, [
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-6 collapse-brand" }, [
-                _c("a", {
-                  staticClass:
-                    "\n                                    navbar-brand\n                                    shadow-soft\n                                    py-2\n                                    px-3\n                                    rounded\n                                    border border-light\n                                ",
-                  attrs: { href: "../../index.html" },
-                }),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "\n                                    navbar-brand\n                                    shadow-soft\n                                    py-2\n                                    px-3\n                                    rounded\n                                    border border-light\n                                ",
+                    attrs: { href: "../../index.html" },
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "public/images/ttree_logo.jpg",
+                        alt: "Themesberg logo",
+                      },
+                    }),
+                  ]
+                ),
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "col-6 collapse-close" }, [
