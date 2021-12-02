@@ -1,13 +1,19 @@
 <template>
-    <div class="container">
-        <!-- page content -->
-        <slot/>
-        <!-- page content -->
+  <div class="container">
+<!-- page content -->
+      <slot/>
+<!-- page content -->
+
     </div>
 </template>
 
 <script>
-export default {};
+    export default {
+        name: 'LandingLayout',
+
+    }
 </script>
 
-<style ></style>
+<style lang="scss" scoped>
+
+</style>
