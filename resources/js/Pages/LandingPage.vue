@@ -6,7 +6,7 @@
         <section-stats />
         <section-team/>
         <section-problems/>
-        <tree-chart/>
+        <tree-chart-app/>
         <the-footer/>
     </landing-layout>
 </template>
@@ -20,11 +20,11 @@ import SectionStats from '../components/SectionStats.vue';
 import SectionTeam from '../components/SectionTeam.vue';
 import SectionProblems from '../components/SectionProblems.vue';
 import TheFooter from '../components/TheFooter.vue';
-import TreeChart from '../components/TreeChart.vue';
+import TreeChartApp from '../components/TreeChartApp.vue';
 
 export default {
     name: 'LandingPage',
-    components: { LandingLayout, TheNavbar, SectionHero, SectionFaq, SectionStats, SectionTeam, SectionProblems, TheFooter, TreeChart,   },
+    components: { LandingLayout, TheNavbar, SectionHero, SectionFaq, SectionStats, SectionTeam, SectionProblems, TheFooter, TreeChartApp,   },
 };
 </script>
 
