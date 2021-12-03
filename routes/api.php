@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TreeController;
+use App\Http\Controllers\TechnologyController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,3 +20,5 @@ use App\Http\Controllers\TreeController;
 // });
 
 Route::resource('tree',TreeController::class);
+// Route::resource('technology',TechnologyController::class)->parameters(['technology' => 'name']);
+
