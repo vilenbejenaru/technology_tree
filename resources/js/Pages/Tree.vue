@@ -1,5 +1,4 @@
 <template>
-  <div>
   <tree-chart-app/>
 </template>
 <script>
