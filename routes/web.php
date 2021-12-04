@@ -13,9 +13,14 @@ use App\Http\Controllers\SpaController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('technology/{technology}/export', [App\Http\Controllers\TechnologyController::class, 'export']);
 Route::get('/{any}', 'SpaController@index')->where('any', '.*');
 Route::get('/about', 'SpaController@index')->where('about', '.*');
 
