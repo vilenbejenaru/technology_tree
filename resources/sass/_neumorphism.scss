@@ -15,17 +15,16 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
 
-// Bootstrap mixins and functions
-@import "bootstrap/mixins";
-@import "bootstrap/functions";
-
+// // Bootstrap mixins and functions
+// @import "~bootstrap/mixins";
+// @import "~bootstrap/functions";
+// @import "~bootstrap/bootstrap";
 // Change variables here
 @import "neumorphism/variables";
 
 // Bootstrap
-@import "bootstrap/bootstrap";
 
 // Vendor
 @import "neumorphism/vendor";
