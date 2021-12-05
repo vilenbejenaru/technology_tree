@@ -23,4 +23,3 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('technology/{technology}/export', [App\Http\Controllers\TechnologyController::class, 'export']);
 Route::get('/{any}', 'SpaController@index')->where('any', '.*');
 Route::get('/about', 'SpaController@index')->where('about', '.*');
-

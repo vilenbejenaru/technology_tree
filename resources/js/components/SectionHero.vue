@@ -7,7 +7,7 @@
                         <p class="lead mb-5">Пройди обучение современным технологиям!</p>
                         <p class="lead mb-5">Найди свой путь, избегая чужих ошибок!!!</p>
                         <a class="btn btn-primary" href="#"><span class="fas fa-book-reader mr-2"></span>Узнать подробнее</a></div>
-                        <img src="resourses/assets/img/ttree/ttree_bg.jpg" alt="">
+
                 </div>
             </div>
 
@@ -22,7 +22,6 @@
 
 <style >
 .tt-hero {
-    background: image_url("/public/images/ttree_bg.jpg");
-    /* background-color: #f8f9fabb; */
+  /* background-image: url('/assets/img/ttree/ttree_bg.jpg'); */
 }
 </style>

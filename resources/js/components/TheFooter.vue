@@ -1,31 +1,31 @@
 <template>
 
-<footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
-    <div class="container">
-        <div class="row">
+<footer class="d-flex pb-4 pt-6 pt-md-7 mt-4 border-top border-light bg-primary">
+    <div class="container pt-3">
+        <div class="row ">
             <div class="col-lg-4">
-                <p><strong>Neumorphism UI PRO</strong> is a premium Bootstrap UI Kit built based on the newest design trend called Neumorphism.</p>
+                <p><strong>Дерево Технологий</strong> это возможность изучить новые технологии. Будьте в курсе!'</p>
                 <ul class="d-flex list-unstyled mb-5 mb-lg-0">
                     <li class="mr-2">
-                        <a href="https://twitter.com/themesberg" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="twitter social link"
-                        data-toggle="tooltip" data-placement="top" title="Follow @themesberg on Twitter">
+                        <a href="https://twitter.com/TechTree" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="twitter social link"
+                        data-toggle="tooltip" data-placement="top" title="Follow @TechTree on Twitter">
                             <span aria-hidden="true" class="fab fa-twitter"></span>
                         </a>
                     </li>
                     <li class="mr-2">
-                        <a href="https://www.facebook.com/themesberg/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="facebook social link"
-                        data-toggle="tooltip" data-placement="top" title="Like @themesberg on Facebook">
+                        <a href="https://www.facebook.com/TechTree/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="facebook social link"
+                        data-toggle="tooltip" data-placement="top" title="Like @TechTree on Facebook">
                             <span aria-hidden="true" class="fab fa-facebook"></span>
                         </a>
                     </li>
                     <li class="mr-2">
-                        <a href="https://github.com/themesberg" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="github social link"
+                        <a href="https://github.com/TechTree" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="github social link"
                         data-toggle="tooltip" data-placement="top" title="Open source projects">
                             <span aria-hidden="true" class="fab fa-github"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://dribbble.com/themesberg" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="dribbble social link"
+                        <a href="https://dribbble.com/TechTree" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="dribbble social link"
                         data-toggle="tooltip" data-placement="top" title="Follow us on Dribbble">
                             <span aria-hidden="true" class="fab fa-dribbble"></span>
                         </a>
@@ -33,34 +33,44 @@
                 </ul>
             </div>
             <div class="col-6 col-lg-2 mb-5 mb-lg-0">
-                <h5>Themesberg</h5>
+                <h5>TechTree</h5>
                 <ul class="footer-links list-unstyled mt-2">
-                    <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/blog">Blog</a></li>
-                    <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/products">Products</a></li>
-                    <li class="mb-1"><a class="p-2" target="_blank" href="https://themesberg.com/about">About Us</a></li>
-                    <li><a class="p-2" target="_blank" href="https://themesberg.com/contact">Contact Us</a></li>
+                    <li class="mb-1"><a class="p-2" target="_blank" href="#">Блог</a></li>
+                    <li class="mb-1"><a class="p-2" target="_blank" href="#">Обучение</a></li>
+                    <li class="mb-1"><a class="p-2" target="_blank" href="#">О нас</a></li>
+                    <li><a class="p-2" target="_blank" href="#">Написать</a></li>
                 </ul>
             </div>
             <div class="col-6 col-lg-2 mb-5 mb-lg-0">
-                <h5>Other</h5>
+                <h5>Tech</h5>
                 <ul class="footer-links list-unstyled mt-2">
-                    <li class="mb-1"><a class="p-2" href="https://themesberg.com/docs/pixel-bootstrap/getting-started/overview/" target="_blank">Docs
-                        <span class="badge badge-gray text-uppercase ml-2">v1.0</span></a>
+
+                    <li class="mb-1">
+                       <router-link :to="{ name: 'Tree' }"
+                    target="_blank" >Tree</router-link
+                >
                     </li>
                     <li class="mb-1">
-                        <a class="p-2" href="https://themesberg.com/docs/pixel-bootstrap/getting-started/changelog" target="_blank">Changelog</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="p-2" target="_blank" href="https://themesberg.com/licensing">License</a>
+                          <router-link :to="{ name: 'Frontend' }"
+                    target="_blank" >Frontend</router-link
+                >
                     </li>
                     <li>
-                        <a class="p-2" target="_blank" href="https://github.com/themesberg/pixel-bootstrap-ui-kit/issues">Support</a>
+                          <router-link :to="{ name: 'Backend' }"
+                    target="_blank" >Backend</router-link
+                >
+                    </li>
+                    <li class="mb-1">
+                          <router-link :to="{ name: '' }"
+                    target="_blank" >Fullstack
+                        <span class="badge badge-gray text-uppercase ml-2">скоро</span></router-link
+                >
                     </li>
                 </ul>
             </div>
             <div class="col-12 col-lg-4 mb-5 mb-lg-0">
-                <h5>Subscribe</h5>
-                <p class="text-gray font-small mt-2">Join our mailing list. We write rarely, but only the best content.</p>
+                <h5>Рассылка</h5>
+                <p class="text-gray font-small mt-2">Последние тенденции в изучении компьютерных  технологий</p>
                 <form action="#">
                     <div class="form-row mb-2">
                         <div class="col-12">
@@ -69,23 +79,24 @@
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary btn-block" data-loading-text="Sending">
-                                <span>Subscribe</span>
+                                <span>Подписаться</span>
                             </button>
                         </div>
                     </div>
                 </form>
-                <p class="text-gray font-small m-0">We’ll never share your details. See our <a class="text-black" href="#">Privacy Policy</a></p>
+                <p class="text-gray font-small m-0">Данные никогда не передаются третьим лицам<a class="text-black" href="#">Политика конфиденциальности</a></p>
             </div>
         </div>
-        <hr class="my-5">
+        <hr class="my-3">
         <div class="row">
             <div class="col">
-                <a href="https://themesberg.com" target="_blank" class="d-flex justify-content-center">
-                    <img src="../../assets/img/themesberg.svg" height="25" class="mb-3" alt="Themesberg Logo">
-                </a>
+                   <router-link :to="{ name: 'Home' }"
+                    target="_blank" class="d-flex justify-content-center">
+                    <img src="/assets/img/ttree/ttree_logo.jpg" height="50" class="mb-3" alt="TechTree Logo">
+                    </router-link>
             <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
-                <p class="font-weight-normal font-small mb-0">Copyright © Themesberg
-                    <span class="current-year">2020</span>. All rights reserved.</p>
+                <p class="font-weight-normal font-small mb-0">Copyright © TechTree
+                    <span class="current-year">2021</span>. All rights reserved.</p>
                 </div>
             </div>
         </div>

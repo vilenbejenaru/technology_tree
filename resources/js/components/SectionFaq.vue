@@ -1,9 +1,9 @@
 <template>
-   <section class="accordion mt-5 text-center" id="accordionExample">
+   <section class=" section section-lg pt-0 mt-4 pb-4 accordion text-center " id="accordionExample">
 
        <h2>Дерево технологий в вопросах и ответах</h2>
 
-                  <div class="accordion container shadow-soft rounded" id="accordionExample1">
+                  <div class="accordion container shadow-soft rounded mt-3 p-3" id="accordionExample1">
                     <div class="card card-sm card-body bg-primary border-light mb-0">
                         <a href="#panel-1" data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
                             <span class="h6 mb-0 font-weight-bold">Кто будет меня учить?</span>
@@ -66,7 +66,8 @@
                         </div>
                     </div>
                 </div>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Остались вопросы?</a>
+                <router-link :to="{ name: '' }" class="">
+            <base-button class="mt-4">Остались вопросы?</base-button></router-link>
 
 
 
@@ -75,14 +76,12 @@
 </template>
 
 <script>
-    export default {
-
-    }
+import BaseButton from "./BaseButton.vue";
+export default {
+    components: { BaseButton },
+};
 </script>
 
 <style scoped>
-.btn-primary {
-    margin: 20px 0;
-}
 
 </style>

@@ -27,6 +27,7 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.4",
         "vue-router": "^3.5.3",
-        "vue-tree-chart": "^1.2.9"
+        "vue-tree-chart": "^1.2.9",
+        "webpack-cli": "^4.9.1"
     }
 }

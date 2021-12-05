@@ -1,24 +1,17 @@
 <template>
-    <div>
-<landing-page/>
-    </div>
+    <landing-page />
 </template>
 
 <script>
-import LandingPage from '../Pages/LandingPage.vue';
+import LandingPage from "../Pages/LandingPage.vue";
 
 export default {
+    components: { LandingPage },
 
-    components: { LandingPage, },
-
-    setup () {
-
-
-        return {}
-    }
-}
+    setup() {
+        return {};
+    },
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

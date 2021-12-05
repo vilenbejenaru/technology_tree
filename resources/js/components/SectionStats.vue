@@ -1,5 +1,5 @@
 <template>
-    <section class="section section-lg pt-0 mt-5 text-center">
+    <section class="section section-lg pt-0 mt-4 pb-4 text-center">
         <h2>Цифры подтверждают эффективность обучения</h2>
         <div class="container mt-5">
             <div class="row">

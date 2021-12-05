@@ -40,6 +40,36 @@ const router = new VueRouter({
     name: "Backend",
     component: Backend
   },
+  // {
+  //   path: "/fullstack",
+  //   name: "Fullstack",
+  //   component: Fullstack
+  // },
+  // {
+  //   path: "/faq",
+  //   name: "Faq",
+  //   component: Faq
+  // },
+  // {
+  //   path: "/study",
+  //   name: "Study",
+  //   component: Study
+  // },
+  // {
+  //   path: "/blog",
+  //   name: "Blog",
+  //   component: Blog
+  // },
+  // {
+  //   path: "/register",
+  //   name: "Register",
+  //   component: Register
+  // },
+  // {
+  //   path: "/login",
+  //   name: "Login",
+  //   component: Login
+  // },
 ],
 });
 

@@ -1,19 +1,33 @@
 <template>
-    <landing-layout>
-        <h1 style="margin-top: 50px">This is an about page</h1>
-    </landing-layout>
+<div>
+        <section-hero />
+        <section-faq />
+        <section-stats />
+        <section-team/>
+        <section-problems/>
+</div>
 </template>
 
 <script>
-import LandingLayout from "../Layouts/LandingLayout.vue";
+import SectionHero from "../components/SectionHero.vue";
+import SectionFaq from "../components/SectionFaq.vue";
+import SectionStats from "../components/SectionStats.vue";
+import SectionTeam from "../components/SectionTeam.vue";
+import SectionProblems from "../components/SectionProblems.vue";
+import LandingLayout from '../Layouts/LandingLayout.vue';
 
 export default {
-    name: 'LandingPage',
-    components: LandingLayout,
+    name: "AboutPage",
+    components: {
+        SectionHero,
+        SectionFaq,
+        SectionStats,
+        SectionTeam,
+        SectionProblems,
+        LandingLayout,
+    },
 };
-</script>
+</script>,
 
-<style>
 
-</style>
-
+<style></style>

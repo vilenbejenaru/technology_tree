@@ -1,5 +1,5 @@
 <template>
-  <button class="navbar__btn">
+  <button class="navbar__btn mx-3">
     <slot></slot>
   </button>
 </template>
