@@ -44,6 +44,7 @@ const router = new VueRouter({
 });
 
 Vue.component('technology-tree-app', require('./components/TechnologyTreeApp.vue').default);
+// Vue.component('example-component', require('./components/ExampleComponent').default);
 
 const app = new Vue({
   el: '#app',

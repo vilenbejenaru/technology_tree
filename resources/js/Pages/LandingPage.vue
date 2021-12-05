@@ -1,6 +1,7 @@
 <template>
     <landing-layout>
         <TheNavbar />
+        <example-component/>
         <section-hero />
         <section-faq />
         <section-stats />
@@ -21,11 +22,12 @@ import SectionTeam from '../components/SectionTeam.vue';
 import SectionProblems from '../components/SectionProblems.vue';
 import TheFooter from '../components/TheFooter.vue';
 import TreeChartApp from '../components/TreeChartApp.vue';
+import ExampleComponent from "../components/ExampleComponent";
 // import MainText from '../components/MainText.vue';
 
 export default {
     name: 'LandingPage',
-    components: { LandingLayout, TheNavbar, SectionHero, SectionFaq, SectionStats, SectionTeam, SectionProblems, TheFooter, TreeChartApp  },
+    components: {ExampleComponent, LandingLayout, TheNavbar, SectionHero, SectionFaq, SectionStats, SectionTeam, SectionProblems, TheFooter, TreeChartApp  },
 };
 </script>
 
