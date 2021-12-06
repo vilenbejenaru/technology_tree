@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TreeController;
 use App\Http\Controllers\TechnologyController;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,6 +20,24 @@ use App\Http\Controllers\TechnologyController;
 //     return $request->user();
 // });
 
-Route::resource('tree',TreeController::class);
-// Route::resource('technology',TechnologyController::class)->parameters(['technology' => 'name']);
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'auth'
 
+], function ($router) {
+    Route::post('/login', [AuthController::class, 'login']);
+    Route::post('/register', [AuthController::class, 'register']);
+    Route::post('/logout', [AuthController::class, 'logout']);
+    Route::post('/refresh', [AuthController::class, 'refresh']);
+    Route::get('/user-profile', [AuthController::class, 'userProfile']);
+});
+Route::get("all",function(){
+
+    return response()->json([
+        'status' => 'Success',
+        'Message' => 'Alibabba',
+    ]);
+});
+
+// Route::resource('tree',TreeController::class);
+// Route::resource('technology',TechnologyController::class)->parameters(['technology' => 'name']);
