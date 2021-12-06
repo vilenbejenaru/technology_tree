@@ -26,8 +26,10 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.4",
+        "vee-validate": "^3.4.14",
         "vue-router": "^3.5.3",
         "vue-tree-chart": "^1.2.9",
+        "vuex": "^3.6.2",
         "webpack-cli": "^4.9.1"
     }
 }
