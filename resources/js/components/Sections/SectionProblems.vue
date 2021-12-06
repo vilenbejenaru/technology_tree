@@ -1,7 +1,7 @@
 <template>
     <section class="section section-lg pt-0 mt-4 pb-4  d-flex flex-column align-items-center">
         <h2 class="text-center">Что Вы получаете</h2>
-        <div class="container ">
+        <div class="container d-flex flex-wrap">
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                 <div class="card bg-primary shadow-inset border-light p-4">
                     <!-- Header -->

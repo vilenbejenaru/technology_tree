@@ -2,7 +2,9 @@
     <div>
         <the-header></the-header>
         <!-- page content -->
-        <router-view></router-view>
+        <div class="container">
+            <router-view />
+        </div>
         <!-- <slot></slot> -->
         <!-- page content -->
         <the-footer />
