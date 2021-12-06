@@ -9,7 +9,7 @@
 
 <script>
 // @ is an alias to /src;
-import SectionMain from '../components/SectionMain.vue';
+import SectionMain from '../components/Sections/SectionMain.vue';
 
 export default {
   name: "Home",

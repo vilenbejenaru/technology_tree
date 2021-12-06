@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import BaseButton from "./BaseButton";
+import BaseButton from "../Base/BaseButton.vue";
+
 export default {
   name: "SectionMain",
   components: {

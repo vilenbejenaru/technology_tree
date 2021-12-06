@@ -1,7 +1,7 @@
 <template>
     <section class="section section-lg pt-0 mt-4 pb-4  d-flex flex-column align-items-center">
         <h2 class="text-center">Что Вы получаете</h2>
-        <div class="container d-flex">
+        <div class="container ">
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                 <div class="card bg-primary shadow-inset border-light p-4">
                     <!-- Header -->
@@ -36,31 +36,6 @@
                     >
                         <span class="d-block">
                             <span class="display-5 font-weight-bold">
-                                Доступные материалы обучения
-                            </span>
-                        </span>
-                    </header>
-                    <!-- End Header -->
-                    <!-- Content -->
-                    <div
-                        class="card-body shadow-soft text-center border border-light rounded"
-                    >
-                        <p>
-                            Все материалы обучения, ссылки и интернет-ресурсы
-                            находятся в свободном доступе
-                        </p>
-                    </div>
-                    <!-- End Content -->
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <div class="card bg-primary shadow-inset border-light p-4">
-                    <!-- Header -->
-                    <header
-                        class="card-header shadow-soft text-center border border-light rounded mb-4"
-                    >
-                        <span class="d-block">
-                            <span class="display-5 font-weight-bold">
                                 Экономия времени и средств</span
                             >
                         </span>
@@ -78,15 +53,42 @@
                     <!-- End Content -->
                 </div>
             </div>
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="card bg-primary shadow-inset border-light p-4">
+                    <!-- Header -->
+                    <header
+                        class="card-header shadow-soft text-center border border-light rounded mb-4"
+                    >
+                        <span class="d-block">
+                            <span class="display-5 font-weight-bold">
+                                Доступные материалы обучения
+                            </span>
+                        </span>
+                    </header>
+                    <!-- End Header -->
+                    <!-- Content -->
+                    <div
+                        class="card-body shadow-soft text-center border border-light rounded"
+                    >
+                        <p>
+                            Все материалы обучения, ссылки и интернет-ресурсы
+                            находятся в свободном доступе
+                        </p>
+                    </div>
+                    <!-- End Content -->
+                </div>
+            </div>
+
         </div>
         <router-link :to="{ name: '' }" class="">
-            <base-button>Войти в IT</base-button></router-link
+            <base-button class="mt-4">Войти в IT</base-button></router-link
         >
     </section>
 </template>
 
 <script>
-import BaseButton from "./BaseButton.vue";
+import BaseButton from "../Base/BaseButton.vue";
+
 export default {
     components: { BaseButton },
 };
