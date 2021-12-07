@@ -6,7 +6,7 @@
                         <h1 class="display-2 mb-4">Дерево технологий</h1>
                         <p class="lead mb-5">Пройди обучение современным технологиям!</p>
                         <p class="lead mb-5">Найди свой путь, избегая чужих ошибок!!!</p>
-<router-link :to="{ name: '' }" class="">
+                     <router-link :to="{ name: 'Login' }">
             <base-button class="mt-4"><span class="fas fa-book-reader mr-2"></span>Узнать подробнее</base-button></router-link>
                 </div>
             </div>

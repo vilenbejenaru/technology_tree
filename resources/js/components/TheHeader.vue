@@ -20,63 +20,32 @@
             <router-link :to="{ name: 'Backend' }"
                 ><BaseButton>Бэкенд</BaseButton></router-link
             >
-            <router-link :to="{ name: '' }"
-                ><BaseButton>Регистрация</BaseButton></router-link
-            >
-        </nav>
-
-        <nav class="navbar navbar-expand navbar-dark bg-dark">
-            <a href class="navbar-brand" @click.prevent>bezKoder</a>
-            <div class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <router-link to="/home" class="nav-link">
-                        <font-awesome-icon icon="home" />Home
+            <BaseButton v-if="!currentUser" >
+                    <router-link to="/register" >
+                        <i class="fas fa-user-plus"></i>
+                        <!-- Регистрация -->
                     </router-link>
-                </li>
-                <li v-if="showAdminBoard" class="nav-item">
-                    <router-link to="/admin" class="nav-link"
-                        >Admin Board</router-link
-                    >
-                </li>
-                <li v-if="showModeratorBoard" class="nav-item">
-                    <router-link to="/mod" class="nav-link"
-                        >Moderator Board</router-link
-                    >
-                </li>
-                <li class="nav-item">
-                    <router-link v-if="currentUser" to="/user" class="nav-link"
-                        >User</router-link
-                    >
-                </li>
-            </div>
-
-            <div v-if="!currentUser" class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <router-link to="/register" class="nav-link">
-                        <font-awesome-icon icon="user-plus" />Sign Up
+                    /
+                    <router-link to="/login">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <!-- Войти -->
                     </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/login" class="nav-link">
-                        <font-awesome-icon icon="sign-in-alt" />Login
-                    </router-link>
-                </li>
-            </div>
+            </BaseButton>
 
-            <div v-if="currentUser" class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <router-link to="/profile" class="nav-link">
-                        <font-awesome-icon icon="user" />
+
+            <BaseButton v-if="currentUser">
+                    <router-link to="/profile" >
+                        <i class="fas fa-user"></i>
                         {{ currentUser.username }}
                     </router-link>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href @click.prevent="logOut">
-                        <font-awesome-icon icon="sign-out-alt" />LogOut
+                        <i class="fas fa-sign-out-alt"></i>   Выйти
                     </a>
-                </li>
-            </div>
+            </BaseButton>
+
         </nav>
+
+
     </header>
 </template>
 

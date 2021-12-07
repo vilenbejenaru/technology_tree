@@ -80,9 +80,9 @@
             </div>
 
         </div>
-        <router-link :to="{ name: '' }" class="">
-            <base-button class="mt-4">Войти в IT</base-button></router-link
-        >
+        <base-button class="mt-4"><router-link to="/login">
+            Войти в IT</router-link>
+        </base-button>
     </section>
 </template>
 

@@ -33,10 +33,10 @@ Route::group([
 });
 Route::get("all",function(){
 
-    return response()->json([
-        'status' => 'Success',
-        'Message' => 'Alibabba',
-    ]);
+    // return response()->json([
+    //     'status' => 'Success',
+    //     'Message' => 'Alibabba',
+    // ]);
 });
 
 // Route::resource('tree',TreeController::class);

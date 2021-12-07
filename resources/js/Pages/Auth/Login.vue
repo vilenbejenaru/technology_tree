@@ -1,6 +1,6 @@
 <template>
     <div class="col-md-12 bg-primary">
-        <div class="card card-container">
+        <div class="card card-container bg-primary">
             <img
                 id="profile-img"
                 src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
@@ -8,7 +8,7 @@
             />
             <form name="form" @submit.prevent="handleLogin">
                 <div class="form-group">
-                    <label for="username">Username</label>
+                    <label for="username">Имя</label>
                     <input
                         v-model="user.username"
                         type="text"
@@ -20,11 +20,11 @@
                         class="alert alert-danger"
                         role="alert"
                     >
-                        Username is required!
+                        Имя обязательно!
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
+                    <label for="password">Пароль</label>
                     <input
                         v-model="user.password"
                         type="password"
@@ -36,7 +36,7 @@
                         class="alert alert-danger"
                         role="alert"
                     >
-                        Password is required!
+                        Пароль обязателен!
                     </div>
                 </div>
                 <div class="form-group">
@@ -48,7 +48,7 @@
                             v-show="loading"
                             class="spinner-border spinner-border-sm"
                         ></span>
-                        <span>Login</span>
+                        <span>Войти</span>
                     </button>
                 </div>
                 <div class="form-group">
@@ -88,12 +88,12 @@ export default {
         handleLogin() {
             this.loading = true;
             this.submitted = false;
-            // this.$validator.validateAll().then((isValid) => {
-            //     console.log(isValid);
-            //     if (!isValid) {
-            //         this.loading = false;
-            //         return;
-            //     }
+            this.$validator.validateAll().then((isValid) => {
+                console.log(isValid);
+                if (!isValid) {
+                    this.loading = false;
+                    return;
+                }
 
             if (this.user.username && this.user.password) {
                 this.$store.dispatch("auth/login", this.user).then(
@@ -110,7 +110,7 @@ export default {
                     }
                 );
             }
-            // });
+            });
         },
     },
 };

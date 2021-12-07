@@ -15,36 +15,32 @@ export const router = new VueRouter({
     routes: [
         {
             path: "/login",
+            name: "Login",
             component: Login,
         },
         {
             path: "/register",
+            name: "Register",
             component: Register,
         },
         {
             path: "/profile",
-            name: "profile",
+            name: "Profile",
             // lazy-loaded
             component: () => import("./Pages/Auth/Profile.vue"),
         },
         {
             path: "/admin",
-            name: "admin",
+            name: "Admin",
             // lazy-loaded
             component: () => import("./Pages/Admin/BoardAdmin.vue"),
         },
         {
             path: "/user",
-            name: "user",
+            name: "User",
             // lazy-loaded
             component: () => import("./Pages/User/BoardUser.vue"),
         },
-        // {
-        //     path: '/mod',
-        //     name: 'moderator',
-        //     // lazy-loaded
-        //     component: () => import('./views/BoardModerator.vue')
-        //   },
         {
             path: "/",
             name: "Home",
@@ -94,21 +90,13 @@ export const router = new VueRouter({
         //   name: "Blog",
         //   component: Blog
         // },
-        // {
-        //   path: "/register",
-        //   name: "Register",
-        //   component: Register
-        // },
-        // {
-        //   path: "/login",
-        //   name: "Login",
-        //   component: Login
-        // },
+
     ],
 });
 
 router.beforeEach((to, from, next) => {
     const publicPages = [
+        "/",
         "/login",
         "/register",
         "/home",
@@ -119,7 +107,6 @@ router.beforeEach((to, from, next) => {
     ];
     const authRequired = !publicPages.includes(to.path);
     const loggedIn = localStorage.getItem("user");
-    console.log(loggedIn);
 
     // trying to access a restricted page + not logged in
     // redirect to login page
