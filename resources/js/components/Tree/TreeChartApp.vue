@@ -65,22 +65,22 @@
                     name: 'JS',
                     image_url: "/assets/img/ttree/js.svg",
                 },
-                {
-                    name: 'Tools',
-                    image_url: "/assets/img/ttree/tools.svg",
-                },
-                {
-                    name: 'Testing',
-                    image_url: "/assets/img/ttree/test.svg",
-                },
-                {
-                    name: 'Optimization',
-                    image_url: "/assets/img/ttree/optimization.svg",
-                },
-                {
-                    name: 'Work',
-                    image_url: "/assets/img/ttree/work.svg",
-                }
+                // {
+                //     name: 'Tools',
+                //     image_url: "/assets/img/ttree/tools.svg",
+                // },
+                // {
+                //     name: 'Testing',
+                //     image_url: "/assets/img/ttree/test.svg",
+                // },
+                // {
+                //     name: 'Optimization',
+                //     image_url: "/assets/img/ttree/optimization.svg",
+                // },
+                // {
+                //     name: 'Work',
+                //     image_url: "/assets/img/ttree/work.svg",
+                // }
             ]
             }
             }

@@ -1,3 +1,4 @@
+
 <template>
         <div class="container">
             <div class="main-body">
@@ -16,7 +17,7 @@
                             }}</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">
-                            Профиль
+                            Редактирование профиля
                         </li>
                     </ol>
                 </nav>
@@ -185,178 +186,39 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <div
-                            class="card mb-3 bg-primary shadow-soft border-light text-center py-4 mb-5"
-                        >
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Имя</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-grey">
-                                        Андрей Т.
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Email</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-grey">
-                                        {{ currentUser.email }}
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Телефон</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-grey">
-                                        (123) 456-78-90
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Образование </h6>
-                                    </div>
-                                    <div class="col-sm-9 text-grey">
-                                       Высшее
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Профессия </h6>
-                                    </div>
-                                    <div class="col-sm-9 text-grey">
-                                       Фронтенд разработчик
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Адрес</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-grey">
-                                        Москва, Россия
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <base-button class="mt-4"
-                                            ><router-link to="/profile/edit">
-                                                Редактировать</router-link
+
+
+        <div class="col-md-8  bg-primary shadow-soft border-light ">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Настройка профиля</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><label class="labels">Имя</label><input type="text" class="form-control" placeholder="имя" value=""></div>
+                    <div class="col-md-6"><label class="labels">Фамилия</label><input type="text" class="form-control" value="" placeholder="фамилия"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Телефон</label><input type="text" class="form-control" placeholder="введите номер телефона" value=""></div>
+                    <div class="col-md-12"><label class="labels">Адрес</label><input type="text" class="form-control" placeholder="введите адрес" value=""></div>
+                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="введите адрес email " value=""></div>
+                    <div class="col-md-12"><label class="labels">Образование</label><input type="text" class="form-control" placeholder="образование" value=""></div>
+                    <div class="col-md-12"><label class="labels">Профессия</label><input type="text" class="form-control" placeholder="профессия/занятие" value=""></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6"><label class="labels">Страна</label><input type="text" class="form-control" placeholder="страна" value=""></div>
+                    <div class="col-md-6"><label class="labels">Регион</label><input type="text" class="form-control" value="" placeholder="регион"></div>
+                </div>
+                  <base-button class="mt-4"
+                                            ><router-link to="#">
+                                                Сохранить профиль</router-link
                                             >
                                         </base-button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row gutters-sm">
-                            <div class="col-sm-6 mb-3">
-                                <div
-                                    class="card h-100 bg-primary shadow-soft border-light text-center py-4 mb-5"
-                                >
-                                    <div class="card-body">
-                                        <h6
-                                            class="d-flex align-items-center justify-content-center mb-2"
-                                        >
-                                            <i
-                                                class="fas fa-chart-line mr-2"
-                                            ></i
-                                            >Общий рейтинг
-                                        </h6>
-                                        <small>HTML</small>
-                                        <div
-                                            class="progress mb-3"
-                                            style="height: 5px"
-                                        >
-                                            <div
-                                                class="progress-bar bg-gradient-gray-600"
-                                                role="progressbar"
-                                                style="width: 89%"
-                                                aria-valuenow="80"
-                                                aria-valuemin="0"
-                                                aria-valuemax="100"
-                                            ></div>
-                                        </div>
-                                        <small>Css</small>
-                                        <div
-                                            class="progress mb-3"
-                                            style="height: 5px"
-                                        >
-                                            <div
-                                                class="progress-bar bg-gradient-gray-600"
-                                                role="progressbar"
-                                                style="width: 80%"
-                                                aria-valuenow="72"
-                                                aria-valuemin="0"
-                                                aria-valuemax="100"
-                                            ></div>
-                                        </div>
-                                        <small>Javascript</small>
-                                        <div
-                                            class="progress mb-3"
-                                            style="height: 5px"
-                                        >
-                                            <div
-                                                class="progress-bar bg-gradient-gray-600"
-                                                role="progressbar"
-                                                style="width: 79%"
-                                                aria-valuenow="89"
-                                                aria-valuemin="0"
-                                                aria-valuemax="100"
-                                            ></div>
-                                        </div>
-                                        <small>React.js</small>
-                                        <div
-                                            class="progress mb-3"
-                                            style="height: 5px"
-                                        >
-                                            <div
-                                                class="progress-bar bg-gradient-gray-600"
-                                                role="progressbar"
-                                                style="width: 67%"
-                                                aria-valuenow="55"
-                                                aria-valuemin="0"
-                                                aria-valuemax="100"
-                                            ></div>
-                                        </div>
-                                        <small>Vue..js</small>
-                                        <div
-                                            class="progress mb-3"
-                                            style="height: 5px"
-                                        >
-                                            <div
-                                                class="progress-bar bg-gradient-gray-600"
-                                                role="progressbar"
-                                                style="width: 55%"
-                                                aria-valuenow="66"
-                                                aria-valuemin="0"
-                                                aria-valuemax="100"
-                                            ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 mb-3">
-                                <div
-                                    class="card h-100 bg-primary shadow-soft border-light text-center py-4 mb-5"
-                                >
-                                    <div class="card-body">
-                                        <h6
-                                            class="d-flex align-items-center justify-content-center mb-2"
-                                        >
-                                            <i
-                                                class="fas fa-flag-checkered mr-2"
-                                            ></i
-                                            >Личный рейтинг
-                                        </h6>
-                                        <small>HTML</small>
+            </div>
+<div class="p-3">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Опыт разработки</h4>
+                </div>
+                 <small>HTML</small>
                                         <div
                                             class="progress mb-3"
                                             style="height: 5px"
@@ -398,21 +260,32 @@
                                                 aria-valuemax="100"
                                             ></div>
                                         </div>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="d-flex justify-content-between align-items-center mt-5"><router-link to="#">
+                                               Редактировать</router-link
+                                            ><router-link to="#"><span class="border-2  px-3 p-1"><i class="fa fa-plus"></i>&nbsp;Добавить</span></router-link
+                                            ></div><br>
+
+
+
+                <div class="col-md-12"><label class="labels">Выберите технологию</label><input type="text" class="form-control" placeholder="новый опыт" value=""></div> <br>
+                <div class="col-md-12"><label class="labels">Рекомендовать ресурс</label><input type="text" class="form-control" placeholder="добавить ресурс" value=""></div>
+                    <base-button class="mt-4"
+                                            ><router-link to="#">
+                                                Обновить опыт</router-link
+                                            >
+                                        </base-button>
             </div>
+
         </div>
+    </div>
+</div>
+</div>
 </template>
 
 <script>
-import BaseButton from "../../components/Base/BaseButton.vue";
+import BaseButton from '../../components/Base/BaseButton.vue';
 export default {
-    components: { BaseButton },
+  components: { BaseButton },
     name: "Profile",
     computed: {
         currentUser() {

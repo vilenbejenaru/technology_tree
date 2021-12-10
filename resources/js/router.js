@@ -9,6 +9,7 @@ import Frontend from "./Pages/Frontend.vue";
 import Backend from "./Pages/Backend.vue";
 import Login from "./Pages/Auth/Login.vue";
 import Register from "./Pages/Auth/Register.vue";
+import ProfileEdit from "./Pages/Auth/ProfileEdit.vue";
 
 export const router = new VueRouter({
     mode: "history",
@@ -28,6 +29,12 @@ export const router = new VueRouter({
             name: "Profile",
             // lazy-loaded
             component: () => import("./Pages/Auth/Profile.vue"),
+        },
+        //todo - correct loading og profileedit
+        {
+            path: "/profile/edit",
+            name: "ProfileEdit",
+            component: ProfileEdit,
         },
         {
             path: "/admin",
